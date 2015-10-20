@@ -77,7 +77,7 @@ Flowpoints =
 /* Passive Vehicles in Front of Cooperation Vehicle */
 TrafficFlow PassiveVehiclesXYZ0%SNR%
 {
-Source PassiveVehiclesXYZ%SNR%
+Source PassiveVehiclesXYZ0%SNR%
 {
 Position = (SimCar, -250, 4);
 Vehicles =
