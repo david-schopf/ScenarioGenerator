@@ -10,6 +10,7 @@ $situation = $_POST['situation'];
 $perspektive =  $_POST['perspektive'];
 $anzahl = $_POST['anzahl'];
 $offset = $_POST['offset'];
+$modul = $_POST['modul'];
 
 if ($perspektive == "Rechts") {
   $tpl = file_get_contents("Right.tpl");
@@ -20,6 +21,7 @@ if ($perspektive == "Rechts") {
   // Situation
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
   $tpl = preg_replace('@%ANZAHL%@is', $anzahl, $tpl);
+  $tpl = preg_replace('@%MODUL%@is', $anzahl, $tpl);
 
   $offsetCount = preg_match_all ('@%(\d*)%@', $tpl, $zahlenwerte);
 
