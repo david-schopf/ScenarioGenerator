@@ -2,27 +2,29 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
 </head>
-<form method="post" action="generator.php">
+<body style="background-color: seagreen";>
+<form role="form" method="post" action="generator.php">
     <div>
         <label for="situation">Situation</label>
-        <input type="text" name="situation" id="situation"/>
+        <input class="form-control" type="text" name="situation" id="situation"/>
     </div>
 
     <div>
         <label for="perspektive">Perspektive</label>
-        <select name="perspektive" id="perspektive">
+        <select name="perspektive" id="perspektive" class="form-control">
             <option>Rechts</option>
             <option>Links</option>
         </select>
     </div>
     <div>
-        <input type="text" name="anzahl" id="anzahl"/>
+        <input type="text" name="anzahl" id="anzahl" class="form-control"/>
         <label for="anzahl">Anzahl</label>
     </div>
     <div>
-        <input type="text" name="offset" id="offset"/>
+        <input type="text" name="offset" id="offset" class="form-control"/>
         <label for="offset">Offset</label>
     </div>
     <input type="submit" name="Erzeugen">
 </form>
+</body>
 </html>
