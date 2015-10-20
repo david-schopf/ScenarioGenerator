@@ -16,7 +16,7 @@ Position = (EI101,%900%,5);
 Behaviour = {(HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(SimCarLocked,900),(FreeDriving, 22, 22, 3,-3)};
 Flowpoints =
 {
-(EI101,%0%,5,SimCar,Activate)
+(EI101,%5%,5,SimCar,Activate)
 ,(EI101,%300%,5,SimCar,Unlock)
 ,(EI101,%5000%,5,SimCar,Deactivate)
 
@@ -32,7 +32,7 @@ Position = (EI101,%0%,4);
 Behaviour = {(HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(SimCarLocked,-350),(FreeDriving, 50, 50, 3,-3)};
 Flowpoints =
 {
-(EI101, %0%, 5, SimCar, Activate)
+(EI101, %5%, 5, SimCar, Activate)
 ,(EI101, %300%, 5, SimCar, Unlock)
 ,(EI101, %2800%, 4, SimCarUserID, %SNR%2, ChangeLaneRequest, 5, 100, 0)
 ,(EI101, %2900%, 4, SimCarUserID, %SNR%2, TargetSpeed, 30)
@@ -49,7 +49,7 @@ Position = (EI101,%0%,4);
 Behaviour = {(HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(SimCarLocked,-400),(FreeDriving, 50, 50, 3,-3)};
 Flowpoints =
 {
-(EI101,%0%,5,SimCar,Activate)
+(EI101,%5%,5,SimCar,Activate)
 ,(EI101,%300%,5,SimCar,Unlock)
 ,(ExternalEvent, %SNR%, HazardAvoidance, 1.5, 0, 3, 6)
 ,(EI101,%2160%,4,SimCarUserID,%SNR%3,HazardAvoidance,0.5,0)
