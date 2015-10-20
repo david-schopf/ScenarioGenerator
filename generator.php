@@ -31,7 +31,9 @@ if ($perspektive == "Rechts") {
     $tpl = str_replace($replacement, $newValue, $tpl);
   }
 
-  echo $tpl;
+
+
+  echo "<pre>".$tpl."</pre>";
 }
 
 
