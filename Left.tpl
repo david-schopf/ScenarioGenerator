@@ -41,12 +41,22 @@ Traffic SituationXYZ0%SNR%
 		 Vehicle = Car;	
 		 UserID = %SNR%3;
 		 Position = (%MODUL%, %450%,5);		
-		 Behaviour = {(LaneChangeAvoidance, 1, 1, 6),(CommandAction, 1, TRFC_CHANGELANEREQUEST, 4, 1, 100),(HazardAvoidance,0.5,0),(FreeDriving, 25, 25, 3,-3)};	
+		 Behaviour = {(HazardAvoidance,0.5,0),(LaneChangeAvoidance, 1, 1, 6),(CommandAction, 1, TRFC_CHANGELANEREQUEST, 4, 1, 100),(FreeDriving, 36, 36, 3,-3)};	
 		 Flowpoints =	
 		 {				
 			 (%MODUL%, %0%,4,SimCar, Activate) #Edit Offset Here
+            ,(%MODUL%, %460%, 5, Traffic, TargetSpeed, 24)
 			 ,(%MODUL%, %300%,4,SimCar, ActivateCommandAction,1)
 			 ,(%MODUL%, %400%,4,SimCar, UserChannel,%SNR%,3000)
+            ,(%MODUL%, %1250%, 5, Traffic, TargetSpeed, 33.33)
+            ,(%MODUL%, %2050%, 4, Traffic, TargetSpeed, 36.11)
+            ,(%MODUL%, %2100%, 4, Traffic, TargetSpeed, 36.11)
+            ,(%MODUL%, %2150%, 4, Traffic, TargetSpeed, 36.11)
+            ,(%MODUL%, %2200%, 4, Traffic, TargetSpeed, 36.11) 
+            ,(%MODUL%, %2250%, 4, Traffic, TargetSpeed, 36.11)
+            ,(%MODUL%, %2300%, 4, Traffic, TargetSpeed, 36.11)
+            ,(%MODUL%, %2350%, 4, Traffic, TargetSpeed, 36.11) 
+            ,(%MODUL%, %2400%, 4, Traffic, TargetSpeed, 36.11) 
 			 ,(%MODUL%, %3000%,4,SimCar, DeactivateCommandAction,1)
 			 ,(%MODUL%, %5000%, 4, SimCar, Deactivate)
 		 };
@@ -115,16 +125,7 @@ Traffic SituationXYZ0%SNR%
 			,(%MODUL%, %750%, 5, Traffic, AutoBrakeLightControl, 0)
 			,(%MODUL%, %750%, 5, Traffic, AutoIndicatorLightControl, 1)
 			,(%MODUL%, %750%, 5, Traffic, Brakelight, 0)
-			,(%MODUL%, %810%, 4, Traffic, TargetSpeed, 36.11) 
-			,(%MODUL%, %1250%, 5, TrafficUserID, %SNR%3, TargetSpeed, 33.33)
-			,(%MODUL%, %2050%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
-			,(%MODUL%, %2100%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
-			,(%MODUL%, %2150%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
-			,(%MODUL%, %2200%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
-			,(%MODUL%, %2250%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
-			,(%MODUL%, %2300%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
-			,(%MODUL%, %2350%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
-			,(%MODUL%, %2400%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
+            ,(%MODUL%, %810%, 4, Traffic, TargetSpeed, 36.11) 
 			,(%MODUL%, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
 			,(%MODUL%, %3300%, 4, Traffic, TargetSpeed, 28) 
 			,(%MODUL%, %3200%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
