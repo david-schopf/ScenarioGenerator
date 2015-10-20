@@ -138,10 +138,10 @@ Flowpoints =
 ,(EI101, 500, 4, Traffic, Brakelight, 0)
 ,(EI101, 900, 4, Traffic, TargetSpeed, 43)
 ,(EI101, 1200, 4, Traffic, TargetSpeed, 36.11)
-,(EI101, 3000, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-,(EI101, 3200, 5, Traffic, TargetSpeed, 30)
-,(EI101, 3100, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-,(EI101, 3300, 5, Traffic, TargetSpeed, 22)
+,(EI101, $3000$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+,(EI101, $3200$, 5, Traffic, TargetSpeed, 30)
+,(EI101, $3100$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+,(EI101, $3300$, 5, Traffic, TargetSpeed, 22)
 
 # Pro Fahrzeug 100 m drauf (bei 4: 200 m)
 
