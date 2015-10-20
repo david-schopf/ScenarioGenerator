@@ -30,7 +30,7 @@ Traffic SituationXYZ0%SNR%
 		 Behaviour = {(HazardAvoidance,0.5,0),(LaneChangeAvoidance, 1, 1, 6),(FreeDriving, 25, 25, 3,-3)};
 		 Flowpoints =	
 		 {				
-			 (EI101, %0%,5,SimCar,Activate) #Edit Offset Here
+			 (EI101, %0%,5,SimCar,Activate) 
 			 ,(EI101, %5000%, 5, SimCar, Deactivate)
 		 };
 	  };
@@ -41,7 +41,7 @@ Traffic SituationXYZ0%SNR%
 		 Vehicle = Car;	
 		 UserID = %SNR%3;
 		 Position = (EI101, %450%,5);		
-		 Behaviour = {(LaneChangeAvoidance, 1, 1, 6),(CommandAction, 1, TRFC_CHANGELANEREQUEST, 4, 1, 100),(HazardAvoidance,0.5,0),(FreeDriving, 25, 25, 3,-3)};	#Verhaltensmodelle nach Priorität geordnet: HazardAvoidance(Minimaler Abstand in s, Abstand in m), FreeDriving für normales Fahren (Startgeschwindigkeit in m/s, Zielgeschwindigkeit)
+		 Behaviour = {(LaneChangeAvoidance, 1, 1, 6),(CommandAction, 1, TRFC_CHANGELANEREQUEST, 4, 1, 100),(HazardAvoidance,0.5,0),(FreeDriving, 25, 25, 3,-3)};	
 		 Flowpoints =	
 		 {				
 			 (EI101, %0%,4,SimCar, Activate) #Edit Offset Here
@@ -72,9 +72,9 @@ Traffic SituationXYZ0%SNR%
 			 
 		 Flowpoints = 
 		 {
-			 (EI101, %0%, 4, SimCar,ActivateSource,(PassiveVehiclesXYZ0%SNR%))	#Edit Offset Here
-			 ,(EI101, %0%, 4, SimCar, ActivateDrain,(PassiveVehiclesXYZ0%SNR%))	#Edit Offset Here
-			 ,(EI101, %500%, 4, SimCar, DeactivateSource, (PassiveVehiclesXYZ0%SNR%))	#Edit Offset Here
+			 (EI101, %0%, 4, SimCar,ActivateSource,(PassiveVehiclesXYZ0%SNR%))	
+			 ,(EI101, %0%, 4, SimCar, ActivateDrain,(PassiveVehiclesXYZ0%SNR%))	
+			 ,(EI101, %500%, 4, SimCar, DeactivateSource, (PassiveVehiclesXYZ0%SNR%))	
 		 };
 	  };
 	  
