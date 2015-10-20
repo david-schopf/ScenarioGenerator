@@ -20,7 +20,7 @@ if ($perspektive == "Rechts") {
 
   echo $tpl;
 
-  $zahlenwerte = preg_match_all ('@$%(\d*)%@', $tpl);
+  $zahlenwerte = preg_match_all ('@%(\d*)%@', $tpl);
 
   for ($i=0; $i<count($zahlenwerte[0]); $i++) {
     $replacement = $zahlenwerte[0][$i];
@@ -28,7 +28,10 @@ if ($perspektive == "Rechts") {
 
     $newValue = $value + $offset;
 
+    $tpl = str_replace($replacement, $newValue, $tpl);
   }
+
+  echo $tpl;
 }
 
 
