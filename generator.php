@@ -12,7 +12,10 @@ $anzahl = $_POST['anzahl'];
 $offset = $_POST['offset'];
 
 if ($perspektive == "Rechts") {
+  $tpl = file_get_contents("Right.tpl");
+} else {
   $tpl = file_get_contents("Left.tpl");
+}
 
   // Situation
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
@@ -31,16 +34,8 @@ if ($perspektive == "Rechts") {
     $tpl = str_replace($replacement, $newValue, $tpl);
   }
 
-
-
+  // Ausgabe
   echo "<pre>".$tpl."</pre>";
-}
 
 
-
-if ($perspektive == "Links") {
-
-  $tpl = file_get_contents("Right.tpl");
-
-}
 
