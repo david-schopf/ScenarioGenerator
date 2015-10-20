@@ -32,9 +32,9 @@ if ($perspektive == "Rechts") {
     $tpl = str_replace($replacement, $newValue, $tpl);
   }
 
-$spurwechselwerte = preg_match_all ('@$(\d*)$@', $tpl);
+ $spurwechselAnzahl= preg_match_all ('@$(\d*)$@', $tpl, $spurwechselwerte);
 
-for ($i=0; $i<count($spurwechselwerte[0]); $i++) {
+for ($i=0; $i<$spurwechselAnzahl; $i++) {
   $replacement = $spurwechselwerte[0][$i];
   $value = $spurwechselwerte[1][$i];
 
