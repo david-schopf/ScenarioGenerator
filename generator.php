@@ -6,5 +6,25 @@
  * Time: 14:56
  */
 
-echo $_POST['situation'];
-echo $_POST['perspektive'];
+$situation = $_POST['situation'];
+$perspektive =  $_POST['perspektive'];
+$anzahl = $_POST['anzahl'];
+
+if ($perspektive == "Rechts") {
+  $tpl = file_get_contents("Left.tpl");
+
+  // Situation
+  $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
+
+  echo $tpl;
+
+}
+
+
+
+if ($perspektive == "Links") {
+
+  $tpl = file_get_contents("Right.tpl");
+
+}
+
