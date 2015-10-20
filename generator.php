@@ -21,12 +21,9 @@ if ($perspektive == "Rechts") {
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
   $tpl = preg_replace('@%ANZAHL%@is', $anzahl, $tpl);
 
-  $zahlenwerte = preg_match_all ('@%(\d*)%@', $tpl);
+  $offsetCount = preg_match_all ('@%(\d*)%@', $tpl, $zahlenwerte);
 
-echo(count($zahlenwerte));
-die();
-
-  for ($i=0; $i<count($zahlenwerte[0]); $i++) {
+  for ($i=0; $i<$offsetCount; $i++) {
     $replacement = $zahlenwerte[0][$i];
     $value = $zahlenwerte[1][$i];
 
