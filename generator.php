@@ -6,4 +6,5 @@
  * Time: 14:56
  */
 
-
+echo $_POST['situation'];
+echo $_POST['perspektive'];
