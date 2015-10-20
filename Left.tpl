@@ -10,7 +10,7 @@ Traffic SituationXYZ0%SNR%
 	  VehicleX ObstXYZ0%SNR%
 	  {
 		 Vehicle = LKW;	
-		 UserID = 21;
+		 UserID = %SNR%1;
 		 Position = (EI101,%1050%,5);		
 		 Behaviour = {(HazardAvoidance,0.5,0),(LaneChangeAvoidance, 1, 1, 6),(FreeDriving, 22, 22, 3,-3)};
 		 Flowpoints =	
@@ -25,7 +25,7 @@ Traffic SituationXYZ0%SNR%
 	  VehicleX PassXYZ0%SNR%
 	  {
 		 Vehicle = Car;	
-		 UserID = 22;
+		 UserID = %SNR%2;
 		 Position = (EI101,%300%,4);		
 		 Behaviour = {(HazardAvoidance,0.5,0),(LaneChangeAvoidance, 1, 1, 6),(FreeDriving, 25, 25, 3,-3)};
 		 Flowpoints =	
@@ -39,14 +39,14 @@ Traffic SituationXYZ0%SNR%
 	  VehicleX CoopXYZ0%SNR%
 	  {
 		 Vehicle = Car;	
-		 UserID = 23;
+		 UserID = %SNR%3;
 		 Position = (EI101, %450%,5);		
 		 Behaviour = {(LaneChangeAvoidance, 1, 1, 6),(CommandAction, 1, TRFC_CHANGELANEREQUEST, 4, 1, 100),(HazardAvoidance,0.5,0),(FreeDriving, 25, 25, 3,-3)};	#Verhaltensmodelle nach Priorität geordnet: HazardAvoidance(Minimaler Abstand in s, Abstand in m), FreeDriving für normales Fahren (Startgeschwindigkeit in m/s, Zielgeschwindigkeit)
 		 Flowpoints =	
 		 {				
 			 (EI101, %0%,4,SimCar, Activate) #Edit Offset Here
 			 ,(EI101, %300%,4,SimCar, ActivateCommandAction,1)
-			 ,(EI101, %400%,4,SimCar, UserChannel,2,3000)
+			 ,(EI101, %400%,4,SimCar, UserChannel,%SNR%,3000)
 			 ,(EI101, %3000%,4,SimCar, DeactivateCommandAction,1)
 			 ,(EI101, %5000%, 4, SimCar, Deactivate)
 		 };
@@ -116,12 +116,12 @@ Traffic SituationXYZ0%SNR%
 			,(EI101, %750%, 5, Traffic, AutoIndicatorLightControl, 1)
 			,(EI101, %750%, 5, Traffic, Brakelight, 0)
 			,(EI101, %810%, 4, Traffic, TargetSpeed, 36.11) 
-			,(EI101, %1250%, 5, TrafficUserID, 23, TargetSpeed, 33.33)
-			,(EI101, %2200%, 4, TrafficUserID, 23, TargetSpeed, 36.11) 
-			,(EI101, %2250%, 4, TrafficUserID, 23, TargetSpeed, 36.11)
-			,(EI101, %2300%, 4, TrafficUserID, 23, TargetSpeed, 36.11)
-			,(EI101, %2350%, 4, TrafficUserID, 23, TargetSpeed, 36.11) 
-			,(EI101, %2400%, 4, TrafficUserID, 23, TargetSpeed, 36.11) 
+			,(EI101, %1250%, 5, TrafficUserID, %SNR%3, TargetSpeed, 33.33)
+			,(EI101, %2200%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
+			,(EI101, %2250%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
+			,(EI101, %2300%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11)
+			,(EI101, %2350%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
+			,(EI101, %2400%, 4, TrafficUserID, %SNR%3, TargetSpeed, 36.11) 
 			,(EI101, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
 			,(EI101, %3300%, 4, Traffic, TargetSpeed, 28) 
 			,(EI101, %3200%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
