@@ -29,7 +29,7 @@ if ($perspektive == "Rechts") {
     $replacement = $zahlenwerte[0][$i];
     $value = $zahlenwerte[1][$i];
 
-    $newValue = $value + $offset;
+    $newValue = $value + $offset * $situation;
 
     $tpl = str_replace($replacement, $newValue, $tpl);
   }

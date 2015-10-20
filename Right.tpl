@@ -12,7 +12,7 @@ VehicleX ObstXYZ0%SNR%
 {
 Vehicle = MAN_TGX_orange22;
 UserID = %SNR%1;
-Position = (EI101,900,5);
+Position = (EI101,%900%,5);
 Behaviour = {(HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(SimCarLocked,900),(FreeDriving, 22, 22, 3,-3)};
 Flowpoints =
 {
