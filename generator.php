@@ -9,6 +9,7 @@
 $situation = $_POST['situation'];
 $perspektive =  $_POST['perspektive'];
 $anzahl = $_POST['anzahl'];
+$offset = 4000;
 
 if ($perspektive == "Rechts") {
   $tpl = file_get_contents("Left.tpl");
@@ -17,6 +18,8 @@ if ($perspektive == "Rechts") {
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
 
   echo $tpl;
+
+  $tpl =
 
 }
 
