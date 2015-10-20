@@ -38,7 +38,7 @@ for ($i=0; $i<$spurwechselAnzahl; $i++) {
   $replacement = $spurwechselwerte[0][$i];
   $value = $spurwechselwerte[1][$i];
 
-  $newValue = $value + 100 * $anzahl;
+  $newValue = $value - ($anzahl - 2)*100;
 
   $tpl = str_replace($replacement, $newValue, $tpl);
 }
