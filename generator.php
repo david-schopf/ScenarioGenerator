@@ -9,18 +9,26 @@
 $situation = $_POST['situation'];
 $perspektive =  $_POST['perspektive'];
 $anzahl = $_POST['anzahl'];
-$offset = 4000;
+$offset = $_POST['offset'];
 
 if ($perspektive == "Rechts") {
   $tpl = file_get_contents("Left.tpl");
 
   // Situation
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
+  $tpl = preg_replace('@%ANZAHL%@is', $anzahl, $tpl);
 
   echo $tpl;
 
-  $tpl =
+  $zahlenwerte = preg_match_all ('@$%(\d*)%@', $tpl);
 
+  for ($i=0; $i<count($zahlenwerte[0]); $i++) {
+    $replacement = $zahlenwerte[0][$i];
+    $value = $zahlenwerte[1][$i];
+
+    $newValue = $value + $offset;
+
+  }
 }
 
 
