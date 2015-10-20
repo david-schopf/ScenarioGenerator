@@ -23,7 +23,7 @@ if ($perspektive == "Rechts") {
 
   $zahlenwerte = preg_match_all ('@%(\d*)%@', $tpl);
 
-var_dump($zahlenwerte);
+echo(count($zahlenwerte));
 die();
 
   for ($i=0; $i<count($zahlenwerte[0]); $i++) {
