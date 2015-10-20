@@ -1,10 +1,20 @@
 <html>
 <form method="post" action="generator.php">
+
+
+    
     <input type="text" name="situation" id="situation"/>
     <label for="situation">Situation</label>
 
-    <input type="text" name="perspektive" id="perspektive"/>
+   <select name="perspektive" id="perspektive">
+       <option>Rechts</option>
+       <option>Links</option>
+   </select>
     <label for="perspektive">Perspektive</label>
+
+    <input type="text" name="anzahl" id="anzahl"/>
+    <label for="anzahl">Anzahl</label>
+
     <input type="submit" name="Erzeugen">
 </form>
 </html>
