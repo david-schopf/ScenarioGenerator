@@ -29,7 +29,7 @@ if ($perspektive == "Rechts") {
     $replacement = $zahlenwerte[0][$i];
     $value = $zahlenwerte[1][$i];
 
-    $newValue = $value + $offset * $situation;
+    $newValue = $value + ($situation-1) * $situation;
 
     $tpl = str_replace($replacement, $newValue, $tpl);
   }
@@ -40,7 +40,7 @@ for ($i=0; $i<$spurwechselAnzahl; $i++) {
   $replacement = $spurwechselwerte[0][$i];
   $value = $spurwechselwerte[1][$i];
 
-  $newValue = $value  + $offset * $situation - ($anzahl - 2)*100;
+  $newValue = $value  + $offset * ($situation-1) - ($anzahl - 2)*100;
 
   $tpl = str_replace($replacement, $newValue, $tpl);
 }
