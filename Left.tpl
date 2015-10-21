@@ -32,7 +32,7 @@ Traffic SituationXYZ0%SNR%
 		 {				
 			 (%MODUL%, %0%,5,SimCar,Activate) 
 			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 31) 
+			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 32) 
 			 ,(%MODUL%, %5000%, 5, SimCar, Deactivate)
 		 };
 	  };
@@ -61,7 +61,7 @@ Traffic SituationXYZ0%SNR%
             ,(%MODUL%, %2400%, 4, Traffic, TargetSpeed, 36.11) 
 			 ,(%MODUL%, %3000%,4,SimCar, DeactivateCommandAction,1)
 			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 31) 
+			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 32) 
 			 ,(%MODUL%, %5000%, 4, SimCar, Deactivate)
 		 };
 	  };
