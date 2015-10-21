@@ -108,7 +108,7 @@ Traffic SituationXYZ0%SNR%
             Position = (SimCar, -450, 4);
             Vehicles =
             {
-            (%ANZAHL%, PKW, (HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(FreeDriving, 50, 50, 3,-1))  #Edit Number of Following Vehicles here
+            (%ANZAHLNEU%, PKW, (HazardAvoidance,0.5,0,3,6),(LaneChangeAvoidance, 1, 1, 6),(FreeDriving, 50, 50, 3,-1))  #Edit Number of Following Vehicles here
             };
             Parameters = (Gleich,3,3,1,1000);
         };
@@ -142,7 +142,7 @@ Traffic SituationXYZ0%SNR%
         ,(%MODUL%, $3100$, 5, Traffic, TargetSpeed, 30)
         ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 25)
         ,(%MODUL%, $3100$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-        ,(%MODUL%, $3300$, 5, Traffic, TargetSpeed, 22)
+        ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 22)
 
     };
 

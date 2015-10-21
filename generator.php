@@ -21,6 +21,11 @@ if ($perspektive == "Rechts") {
   // Situation
   $tpl = preg_replace('@%SNR%@is', $situation, $tpl);
   $tpl = preg_replace('@%ANZAHL%@is', $anzahl, $tpl);
+    if($anzahl == 4) {
+      $tpl = preg_replace('@%ANZAHLNEU%@is', $anzahl-1, $tpl);
+    } else { 
+      $tpl = preg_replace('@%ANZAHLNEU%@is', $anzahl, $tpl);
+    }
   $tpl = preg_replace('@%MODUL%@is', $modul, $tpl);
 
   $offsetCount = preg_match_all ('@%(\d*)%@', $tpl, $zahlenwerte);
