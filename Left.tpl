@@ -31,6 +31,8 @@ Traffic SituationXYZ0%SNR%
 		 Flowpoints =	
 		 {				
 			 (%MODUL%, %0%,5,SimCar,Activate) 
+			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 28) 
 			 ,(%MODUL%, %5000%, 5, SimCar, Deactivate)
 		 };
 	  };
@@ -58,6 +60,8 @@ Traffic SituationXYZ0%SNR%
             ,(%MODUL%, %2350%, 4, Traffic, TargetSpeed, 36.11) 
             ,(%MODUL%, %2400%, 4, Traffic, TargetSpeed, 36.11) 
 			 ,(%MODUL%, %3000%,4,SimCar, DeactivateCommandAction,1)
+			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 28) 
 			 ,(%MODUL%, %5000%, 4, SimCar, Deactivate)
 		 };
 	  };
@@ -126,10 +130,11 @@ Traffic SituationXYZ0%SNR%
 			,(%MODUL%, %750%, 5, Traffic, AutoIndicatorLightControl, 1)
 			,(%MODUL%, %750%, 5, Traffic, Brakelight, 0)
             ,(%MODUL%, %810%, 4, Traffic, TargetSpeed, 36.11) 
-			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 28) 
-			,(%MODUL%, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
-			,(%MODUL%, %2900%, 4, Traffic, TargetSpeed, 22) 
+			,(%MODUL%, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+			,(%MODUL%, %2900%, 4, Traffic, TargetSpeed, 28) 
+			,(%MODUL%, %3100%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
+			,(%MODUL%, %3100%, 4, Traffic, TargetSpeed, 22) 
+			,(%MODUL%, %3000%, 5, Traffic, TargetSpeed, 22) 
 			 
 	  };
 };
