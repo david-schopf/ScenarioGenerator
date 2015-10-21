@@ -126,10 +126,10 @@ Traffic SituationXYZ0%SNR%
 			,(%MODUL%, %750%, 5, Traffic, AutoIndicatorLightControl, 1)
 			,(%MODUL%, %750%, 5, Traffic, Brakelight, 0)
             ,(%MODUL%, %810%, 4, Traffic, TargetSpeed, 36.11) 
-			,(%MODUL%, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-			,(%MODUL%, %3300%, 4, Traffic, TargetSpeed, 28) 
-			,(%MODUL%, %3200%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
-			,(%MODUL%, %3400%, 5, Traffic, TargetSpeed, 22) 
+			,(%MODUL%, %2700%, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
+			,(%MODUL%, %2700%, 4, Traffic, TargetSpeed, 28) 
+			,(%MODUL%, %2900%, 4, Traffic, ChangeLaneRequest, 5, 100, 0) 
+			,(%MODUL%, %2900%, 4, Traffic, TargetSpeed, 22) 
 			 
 	  };
 };

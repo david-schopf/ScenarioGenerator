@@ -35,7 +35,7 @@ Traffic SituationXYZ0%SNR%
             (%MODUL%, %5%, 5, SimCar, Activate)
             ,(%MODUL%, %300%, 5, SimCar, Unlock)
             ,(%MODUL%, %2800%, 4, SimCarUserID, %SNR%2, ChangeLaneRequest, 5, 100, 0)
-            ,(%MODUL%, %2900%, 4, SimCarUserID, %SNR%2, TargetSpeed, 30)
+            ,(%MODUL%, %2800%, 4, SimCarUserID, %SNR%2, TargetSpeed, 29)
             ,(%MODUL%, %5000%, 4, SimCar, Deactivate)
         };
     };
@@ -139,7 +139,8 @@ Traffic SituationXYZ0%SNR%
         ,(%MODUL%, %900%, 4, Traffic, TargetSpeed, 43)
         ,(%MODUL%, %1200%, 4, Traffic, TargetSpeed, 36.11)
         ,(%MODUL%, $3000$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-        ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 30)
+        ,(%MODUL%, $3100$, 5, Traffic, TargetSpeed, 30)
+        ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 25)
         ,(%MODUL%, $3100$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
         ,(%MODUL%, $3300$, 5, Traffic, TargetSpeed, 22)
 
