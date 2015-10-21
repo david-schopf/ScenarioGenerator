@@ -139,7 +139,7 @@ Traffic SituationXYZ0%SNR%
         ,(%MODUL%, %900%, 4, Traffic, TargetSpeed, 43)
         ,(%MODUL%, %1200%, 4, Traffic, TargetSpeed, 36.11)
         ,(%MODUL%, $3000$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
-        ,(%MODUL%, $3100$, 5, Traffic, TargetSpeed, 30)
+        ,(%MODUL%, $3100$, 5, Traffic, TargetSpeed, 28)
         ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 25)
         ,(%MODUL%, $3100$, 4, Traffic, ChangeLaneRequest, 5, 100, 0)
         ,(%MODUL%, $3200$, 5, Traffic, TargetSpeed, 22)
